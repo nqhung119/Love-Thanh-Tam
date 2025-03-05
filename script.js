@@ -21,4 +21,17 @@ function calculateLoveTime() {
   }
   
   setInterval(calculateLoveTime, 1000);
-  
+
+  const audio = document.getElementById('background-music');
+  const musicButton = document.getElementById('music-button');
+  let isPlaying = true;
+  musicButton.addEventListener('click', () => {
+    if (isPlaying) {
+      audio.pause();
+      musicButton.innerHTML = '<i class="bi bi-volume-mute-fill"></i>';
+    } else {
+      audio.play();
+      musicButton.innerHTML = '<i class="bi bi-volume-up-fill"></i>';
+    }
+    isPlaying = !isPlaying;
+  });

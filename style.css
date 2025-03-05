@@ -1,16 +1,24 @@
+/* Reset & Global Fonts */
 body {
-  background-image: url('./images/bg-01.png');
-  background-size: cover;
-  
-  background-repeat: no-repeat;
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
+  
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.nav-link:hover {
-  color: pink !important;
-  transition: 0.3s;
+/* Navbar */
+.navbar {
+  background: transparent !important;
+}
+
+.navbar-brand {
+  text-align: center;
+  width: 100%;
+  font-size: 20px !important;
+  font-weight: bold !important;
+  color: #A6446E;
 }
 
 .navbar-nav {
@@ -26,27 +34,38 @@ body {
   font-size: 18px;
 }
 
-.navbar-brand {
-  text-align: center;
-  width: 100%;
-  font-size: 32px;
+.nav-link {
+  font-size: 18px;
+  color: #D63384;
+  transition: color 0.3s ease;
 }
 
-.navbar {
-  background: transparent !important;
+.nav-link:hover {
+  color: #A6446E;
 }
 
-.timer-box {
-  background: rgba(255, 192, 203, 0.8);
-  border-radius: 10px;
-  padding: 10px; 
-  margin: 5px;
-  font-size: 20px; 
-  font-weight: bold;
+/* Typography */
+h2 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 36px;
+  color: #D63384;
+}
+
+h3 {
+  font-size: 24px;
+  color: #A6446E;
 }
 
 span {
-  color: #ff69b4;
+  font-size: 28px;
+  font-weight: 600;
+  color: #D63384;
+}
+
+/* Timer Section */
+.container {
+  margin-top: 40px;
+  padding-bottom: 40px;
 }
 
 #timer {
@@ -56,11 +75,37 @@ span {
 }
 
 #timer .col-2 {
-  width: 30%; /* Giảm kích thước box */
+  width: 30%;
   text-align: center;
 }
 
 #timer .col-2:nth-child(-n+3) {
-  margin-bottom: 10px; /* Tạo khoảng cách giữa 2 hàng */
+  margin-bottom: 10px;
 }
 
+#timer .row {
+  margin-bottom: 10px;
+}
+
+#timer .col-4 span {
+  padding: 10px 0;
+  background: #FDE2E4;
+  border-radius: 12px;
+  display: block;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#totalDays {
+  font-size: 30px;
+  font-weight: 700;
+  color: #A6446E;
+}
+
+.timer-box {
+  background: rgba(255, 192, 203, 0.8);
+  border-radius: 10px;
+  padding: 10px;
+  margin: 5px;
+  font-size: 20px;
+  font-weight: bold;
+}
