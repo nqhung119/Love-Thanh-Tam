@@ -12,15 +12,48 @@
   </head>
 
   <body>
-    <header class="fixed top-0 left-0 w-full bg-white shadow-md py-4 px-20 flex justify-between items-center z-50 header-nav" id="header-nav">
+    <header class="fixed top-0 left-0 w-full bg-white shadow-md py-4 px-28 flex justify-between items-center z-50 header-nav" id="header-nav">
       <div class="text-4xl font-bold text-pink-600">Love story of Tam and Hung</div>
       <nav class="flex gap-12">
-        <button class="text-lg text-gray-700 hover:text-pink-600 transition">Thời gian</button>
-        <button class="text-lg text-gray-700 hover:text-pink-600 transition">Câu chuyện</button>
-        <button class="text-lg text-gray-700 hover:text-pink-600 transition">Thư mời</button>
+        <button class="text-lg text-pink-600 hover:text-pink-600 transition active" id="time-button">Thời gian</button>
+        <button class="text-lg text-gray-700 hover:text-pink-600 transition" id="story-button">Câu chuyện</button>
+        <button class="text-lg text-gray-700 hover:text-pink-600 transition" id="invite-button">Thư mời</button>
       </nav>
     </header>
 
+    <div class="flex justify-center items-center h-screen">
+      <div class="bg-pink-100 rounded-lg shadow-lg p-10 text-center max-w-xl">
+        <h2 class="text-3xl text-pink-600 font-bold mb-4">Thời gian chúng ta bên nhau:</h2>
+        <p class="text-lg text-pink-500 mb-6">Ngày tỏ tình: 25/11/2024</p>
+        <div class="time-counter grid grid-cols-3 gap-4 text-white text-center text-xl font-bold mb-6">
+          <div class="bg-pink-400 rounded-lg p-4">
+            <span id="years">0</span>
+            <div>Năm</div>
+          </div>
+          <div class="bg-pink-400 rounded-lg p-4">
+            <span id="months">0</span>
+            <div>Tháng</div>
+          </div>
+          <div class="bg-pink-400 rounded-lg p-4">
+            <span id="days">0</span>
+            <div>Ngày</div>
+          </div>
+          <div class="bg-pink-400 rounded-lg p-4">
+            <span id="hours">0</span>
+            <div>Giờ</div>
+          </div>
+          <div class="bg-pink-400 rounded-lg p-4">
+            <span id="minutes">0</span>
+            <div>Phút</div>
+          </div>
+          <div class="bg-pink-400 rounded-lg p-4">
+            <span id="seconds">0</span>
+            <div>Giây</div>
+          </div>
+        </div>
+        <blockquote class="italic text-pink-500">"Cảm ơn em vì <span id="days-of-love"></span> em đã ở bên anh."</blockquote>
+      </div>
+    </div>
   
 
     <script src="./script.js"></script>

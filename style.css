@@ -11,3 +11,8 @@ body {
   .header-nav {
     font-family: 'Dancing Script', cursive;
   }
+
+  .active {
+    color: #ec4899;
+    font-weight: bold;
+  }
